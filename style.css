@@ -1,0 +1,103 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* height: 100vh; */
+    background: rgb(168, 114, 219);
+    background : linear-gradient(135deg, #ff7e5f, #feb47b); 
+     background-size: 400% 400%;
+    animation: gradientBackground 5s ease infinite;
+}
+.container, #resumePage {
+    width: 90%;
+    max-width: 50em;
+    margin: auto;
+    background-color: #ffffff;
+    border-radius: 20px; /* Increased border radius */
+     padding: 25px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15); 
+    /* Elevated shadow */
+     transition: box-shadow 0.4s ease, transform 0.4s ease;
+    animation: fadeIn 1.2s ease-out, scaleUp 1.2s ease-out; 
+} 
+
+
+label{
+    display: block;
+    margin-bottom: 0.7em;
+    font-weight: bold;
+    color: rgb(139, 85, 17);
+    font-size: 1.1em;
+}
+textarea{
+    height: 130px;
+    border-radius: 10px;
+}
+input[type="text"], input[type="email"],input [type="tel"], textarea {
+    width: 100%;
+    padding: 0.85em;
+    margin-top: 0.5em;
+    border: 2px solid #0075f1;
+    border-radius: 10px; /* Smooth corners */
+    box-sizing: border-box;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+input[type="text"]:focus, input[type="email"]:focus, textarea:focus {
+    border-color: #004080;
+    box-shadow: 0 0 12px rgba(4, 33, 65, 0.6);
+    outline: none;
+}
+
+
+.hidden{
+    display: none;
+}
+#resumePage img{
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    display: block;
+    margin: auto;
+    border: 5px solid #12ece1;
+    transition: border-color 0.3s ease, transform 0.3s ease;
+}
+
+#resumePage img:hover {
+    border-color: #007bff;
+    transform: scale(1.15);
+}
+h1{
+    color: rgb(139, 85, 17);
+    text-align: center;
+}
+#resumePage h1{
+    color:darkcyan;
+    text-align: center;
+}
+#resumePage h2{
+    color:rgb(75, 75, 224);
+    text-align: left;
+}
+button {
+    padding: 0.85em 1.8em;
+    margin-top: 25px;
+    border: none;
+    color: #fff;
+    font-weight: 600;
+    background: linear-gradient(135deg, #0dddba, #0ddfdf);
+    border-radius: 10px;
+    cursor: pointer;
+    margin-right: 1em;
+    transition: background 0.3s ease, transform 0.3s ease;
+    font-size: 1em;
+}
+
+button:hover {
+    background: linear-gradient(135deg, #e4c206, #ecc518);
+    transform: scale(1.07);
+}
